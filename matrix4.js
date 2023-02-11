@@ -18,7 +18,7 @@ export function translate( m4, v3 ) {
 	] )
 }
 
-function rotateAxis( m4, v3, radian ) {
+export function rotateAxis( m4, v3, radian ) {
 
 	const len = 1 / Math.sqrt( v3[ 0 ] * v3[ 0 ] + v3[ 1 ] * v3[ 1 ] + v3[ 2 ] * v3[ 2 ] )
 	const x = v3[ 0 ] * len
