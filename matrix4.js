@@ -34,3 +34,13 @@ export function rotateAxis( m4, v3, radian ) {
 		m4[ 12 ], m4[ 13 ], m4[ 14 ], m4[ 15 ]
 	] )
 }
+
+export function scale( m4, v3 ) {
+
+	return new Float32Array( [
+		m4[ 0 ] * v3[ 0 ], m4[ 1 ] * v3[ 0 ], m4[ 2 ] * v3[ 0 ], m4[ 3 ] * v3[ 0 ],
+		m4[ 4 ] * v3[ 1 ], m4[ 5 ] * v3[ 1 ], m4[ 6 ] * v3[ 1 ], m4[ 7 ] * v3[ 1 ],
+		m4[ 8 ] * v3[ 2 ], m4[ 9 ] * v3[ 2 ], m4[ 10 ] * v3[ 2 ], m4[ 11 ] * v3[ 2 ],
+		m4[ 12 ], m4[ 13 ], m4[ 14 ], m4[ 15 ]
+	] )
+}
